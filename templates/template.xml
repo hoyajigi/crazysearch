@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<SearchSuggestion xmlns="http://schemas.microsoft.com/Search/2008/suggestions">
+	<Query>{{query}}</Query>
+	<Section>
+	{% for user in users %}
+	<Item>
+		<Text>{{user.nickname}}</Text>
+		<Description>{{user.description}}</Description>
+		<Image source="{{user.img}}" alt="{{user.nickname}}" width="75" height="75"/>
+		<Url>http://me2day.net/{{user.name}}</Url>
+	</Item>
+	{% endfor %}
+	</Section>
+</SearchSuggestion>

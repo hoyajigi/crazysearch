@@ -1,0 +1,11 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/"
+		               xmlns:ie="http://schemas.microsoft.com/Search/2008/">
+	<ShortName>CrazySearch</ShortName>
+	<Description>Finds friends in me2day</Description>
+	<InputEncoding>UTF-8</InputEncoding>	
+	<Image width="16" height="16" type="image/x-icon">http://me2day.net/favicon.ico</Image>
+	<Url type="text/html" method="get" template="http://se.me2toy.net/crazysearch/?q={searchTerms}"/>
+	<Url type="application/x-suggestions+xml" template="http://se.me2toy.net/crazysearch/?q={searchTerms}&amp;suggestion&amp;xml"/>
+	<ie:PreviewUrl type="text/html" template="http://se.me2toy.net/crazysearch/?q={searchTerms}&amp;xml"/>
+</OpenSearchDescription>
